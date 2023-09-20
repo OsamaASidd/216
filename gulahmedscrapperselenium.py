@@ -68,4 +68,6 @@ for item in product_items:
     
 product_json = json.dumps(product_list, indent=4)
 
-print(product_json)
+with open('gulahmed_products.json', 'w') as json_file:
+    json_file.write(product_json)
+
